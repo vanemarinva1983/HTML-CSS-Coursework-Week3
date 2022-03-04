@@ -1,9 +1,37 @@
-
-.parrafo1{text-align: justify;
-
+.parrafo1 {
+  text-align: justify;
 }
 
-.imagen1{padding-bottom: 40px;
-
+.imagen1 {
+  padding-bottom: 40px;
 }
 
+.caja {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+img {
+  flex-shrink: 1;
+  max-width: 100%;
+}
+
+.navbar-toggler {
+  top: -140px;
+  position: absolute;
+  left: 450px;
+  
+}
+
+@media (min-width: 540px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
