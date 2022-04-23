@@ -1,1 +1,56 @@
 /*  Add your styling here */
+
+* {
+  margin: 0;
+}
+
+.main {
+  padding: 1em;
+}
+
+.texto1 {
+  text-align: justify;
+}
+
+.imagen {
+  width: 100%;
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-top: 20px;
+}
+
+.imagen_rectangular {
+  height: 114px;
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    padding: 2em;
+  }
+  .contenido {
+    display: grid;
+    grid-template-areas:
+      "imagen titulo"
+      "imagen texto";
+    gap: 10px;
+    align-items: start;
+    justify-items: end;
+  }
+  .titulo {
+    grid-area: titulo;
+  }
+  .texto1 {
+    grid-area: texto;
+    text-align: right;
+  }
+  .imagen1 {
+    grid-area: imagen;
+  }
+  .imagenes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
